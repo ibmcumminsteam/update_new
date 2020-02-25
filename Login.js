@@ -47,10 +47,12 @@ class Login extends Component {
            
 
                       <View>
-
+                      <Image 
+                      source={require('./assets/images/login_icon.png')} 
+                      style ={{alignSelf:'center',height:100,width:250,marginLeft:600, marginTop:100, marginRight:600 }}/>
                       <Text 
                         style={{fontSize: 27, paddingBottom: 40, textAlign: 'center', marginTop: 50,}}>
-                        Login
+                        Login page
                       </Text>
           
                       <TextInput 
@@ -67,6 +69,7 @@ class Login extends Component {
                       placeholder='Password' 
                       style={styles.input}
                       value={this.state.pass}
+                      secureTextEntry={true}
                       onChangeText={(pass) => this.setState({pass})}
 
 
@@ -95,7 +98,7 @@ class Login extends Component {
                             
                           />
                           </View>
-                      <View style={{paddingTop:50, height : 100, width: 200, alignSelf: 'center'}}>
+                      {/* <View style={{paddingTop:50, height : 100, width: 200, alignSelf: 'center'}}>
                       <Button 
                       //   onPress={this.props.onLoginPress}
                       // {...this.props.navigation.navigate('Screen1')}
@@ -105,7 +108,7 @@ class Login extends Component {
 
 
                       />
-                      </View>
+                      </View> */}
 
                       </View>
                     
@@ -132,7 +135,8 @@ const styles = StyleSheet.create({
     padding: 10,
     marginBottom: 15,
     marginLeft: 20,
-    marginRight: 20
+    marginRight: 20,
+    borderRadius: 20,
     
 
     },
